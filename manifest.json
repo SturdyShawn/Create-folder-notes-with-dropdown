@@ -1,0 +1,12 @@
+{
+    "id": "create-folder-notes-with-dropdown",
+    "name": "create folder notes with dropdown",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "AutoFolderCreator is a plugin designed to help users quickly create and organize Markdown files.",
+    "author": "Sturdy Shawn",
+    "authorUrl": "https://github.com/SturdyShawn",
+    "isDesktopOnly": false,
+    "main": "main.js"
+  }
+  
