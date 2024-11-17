@@ -4,6 +4,8 @@
 ## Interface
 <img src="image/interface.png" alt="Alt text" width="500" height="300">
 
+## Suggestion
+You can set a shortcut to open the plugin really fast and help to create new notes within 3 level hierarchy!
 ## Example: How to Use it?
 *video is under preparation*
 ## Connect Author
