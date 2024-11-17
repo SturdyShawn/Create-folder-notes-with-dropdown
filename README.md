@@ -7,6 +7,6 @@
 ## Example: How to Use it?
 *video is under preparation*
 ## Connect Author
-Project Github: https://github.com/SturdyShawn/Create-folder-notes-with-dropdown 
-E-mail: shawnsturdy8@outlook.com
+Project Github: https://github.com/SturdyShawn/Create-folder-notes-with-dropdown \n
+E-mail: shawnsturdy8@outlook.com\n
 Thanks for any suggestions, guidance and encouragement!
