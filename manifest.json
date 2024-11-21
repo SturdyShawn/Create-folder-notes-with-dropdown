@@ -1,7 +1,7 @@
 {
     "id": "create-folder-notes-with-dropdown",
     "name": "create folder notes with dropdown",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "minAppVersion": "0.15.0",
     "description": "create-folder-notes-with-dropdown is a plugin designed to help users quickly create Markdown files in existing or nonexisting folders with dropdown.",
     "author": "Sturdy Shawn",
