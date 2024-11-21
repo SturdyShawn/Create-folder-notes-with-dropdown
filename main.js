@@ -3,14 +3,14 @@ const { Plugin, Modal, Notice, TFolder } = require('obsidian');
 class AutoFolderCreator extends Plugin {
     async onload() {
         // Add ribbon icon
-        this.addRibbonIcon('folder-plus', 'Auto Folder Creator', () => {
+        this.addRibbonIcon('folder-plus', 'Auto folder creator', () => {
             this.showFileCreatorModal();
         });
 
         // Add command to command palette
         this.addCommand({
             id: 'open-auto-folder-creator',
-            name: 'Create New File with Folders',
+            name: 'Create new file with folders',
             callback: () => {
                 this.showFileCreatorModal();
             }
@@ -40,11 +40,11 @@ class FileCreatorModal extends Modal {
         const { contentEl } = this;
         contentEl.empty();
         
-        contentEl.createEl('h2', { text: 'Create New File' });
+        contentEl.createEl('h2', { text: 'Create new file' });
 
         // File name input
         const fileNameContainer = contentEl.createDiv();
-        fileNameContainer.createEl('label', { text: 'File Name: ' });
+        fileNameContainer.createEl('label', { text: 'File name: ' });
         const fileNameInput = fileNameContainer.createEl('input', {
             type: 'text',
             placeholder: 'Enter file name (without .md)'
@@ -57,7 +57,7 @@ class FileCreatorModal extends Modal {
         const firstLevelContainer = contentEl.createDiv();
         const firstLevelSelect = await this.createFolderSelector(
             firstLevelContainer, 
-            'First Level Folder:', 
+            'First level folder (Optional):', 
             'first', 
             null, 
             () => this.updateSecondLevelFolders()
@@ -67,7 +67,7 @@ class FileCreatorModal extends Modal {
         const secondLevelContainer = contentEl.createDiv();
         this.secondLevelSelect = await this.createFolderSelector(
             secondLevelContainer, 
-            'Second Level Folder (Optional):', 
+            'Second level folder (Optional):', 
             'second', 
             'first', 
             () => this.updateThirdLevelFolders()
@@ -77,14 +77,14 @@ class FileCreatorModal extends Modal {
         const thirdLevelContainer = contentEl.createDiv();
         this.thirdLevelSelect = await this.createFolderSelector(
             thirdLevelContainer, 
-            'Third Level Folder (Optional):', 
+            'Third level folder (Optional):', 
             'third', 
             'second'
         );
 
         // Create button
         const createButton = contentEl.createEl('button', {
-            text: 'Create File',
+            text: 'Create file',
             cls: 'mod-cta'
         });
         createButton.addEventListener('click', () => this.createFile());
