@@ -6,6 +6,6 @@
     "description": "create-folder-notes-with-dropdown is a plugin designed to help users quickly create Markdown files in existing or nonexisting folders with dropdown.",
     "author": "Sturdy Shawn",
     "authorUrl": "https://github.com/SturdyShawn",
-    "isDesktopOnly": false,
+    "isDesktopOnly": false
   }
   
